@@ -1,6 +1,4 @@
-//blocking try-catch
 require("express-async-errors");
-//dotenv
 require("dotenv").config();
 const PORT = process.env.PORT || 5000;
 
@@ -50,7 +48,6 @@ app.use(
     replaceWith: "_",
   })
 );
-
 
 
 app.use("/api", router);
